@@ -77,12 +77,14 @@
 			<version>${jetty.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- The core basic Elepy dependency combines the core module and the cms module -->
 		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty-management</artifactId>
-			<version>${jetty.version}</version>
-			<scope>provided</scope>
+			<groupId>com.elepy</groupId>
+			<artifactId>elepy-basic</artifactId>
+			<version>3.0.0-alpha-29</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -115,10 +117,7 @@
 			</testResource>
 		</testResources>
 		<plugins>
-			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>maven-jetty-plugin</artifactId>
-			</plugin>
+
 		</plugins>
 	</build>
 
@@ -126,5 +125,6 @@
 		<wicket.version>1.3.2</wicket.version>
 		<jetty.version>6.1.4</jetty.version>
 	</properties>
+
 
 </project>
